@@ -162,3 +162,34 @@ a {
   background-size: 6px 10px;
   color: #999;
 }
+
+/* 视频列表.start */
+.videoList_main{}
+.videoList_main .videoList_main_item{
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 15px 0;
+}
+.videoList_main_image{
+  display: block;
+  margin: 0 auto;
+  width: 93%;
+  border-radius: 5px;
+}
+.videoList_main_item:after{
+  position: absolute;
+  content: '';
+  height: 79px;
+  width: 79px;
+  background: url(../img/video_play.png) no-repeat 0 0;
+  background-size: 79px 79px;
+}
+.videoList_main_txt{
+  color: #222;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  padding: 0 4%;
+  margin: 6px 0;
+}
+/* 视频列表.end */

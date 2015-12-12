@@ -1,3 +1,4 @@
+/* 联系我们 .start */
 .contact_top{
 	padding: 15px 0;
 }
@@ -46,3 +47,52 @@
 	background: url('../img/contact_icon.png') no-repeat 20px -190px;
 	background-size: 200px 250px;
 }
+/* 联系我们 .end */
+
+/* 视频list .start */
+.videoList_top{
+	height: 40px;
+	line-height: 40px;
+	background: #333333;
+	color: #c0c0c0;
+	font-size: 1.4rem;
+	padding-left: 51px;
+	border-top: 1px solid #676767;
+}
+.videoList_top .left{
+	position: absolute;
+	left: 24px;
+	color: #6e6e6e;
+}
+.videoList_top>div{
+	position: relative;
+	text-align: center;
+}
+.videoList_top>div>span{
+	padding: 5px;
+	border-radius: 5px;
+}
+.videoList_top>div .active{
+	background: #1a1a1a;
+}
+.videoList_top .border:after,.videoList_top .border:before{
+	content: '';
+	/*z-index: 11111;*/
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	height: 20px;
+	width: 1px;
+	background: #3b3b3b;
+	border-left: 1px solid #202020;
+
+}
+.videoList_top .border:after{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	left: auto;
+}
+/* 视频list .end */
+
+
