@@ -32,4 +32,17 @@
 .pgn a.next{background-position: 5px center;}
 .pgn strong{border-color: #000;background: #000;color: #fff;}
 .pgn strong + a{border-left: none;}
-.pgn span{}
+
+.game_detail_tabs{padding: 0 10px;}
+.game_detail_tabs a{text-align: center;font-size: 15px;white-space: nowrap;display: inline-block;color: #000204;border-bottom: 3px solid #000204;line-height: 38px;position: relative;}
+.game_detail_tabs a:first-child{flex: 0.65;}
+.game_detail_tabs a:first-child + a{flex: 1.35;}
+.game_detail_tabs a:focus{border-bottom-color: #cf0f32;}
+.game_detail_tabs a::before{content: '';width: 1px;height: 20px;background: #c9c9c9;position: absolute;left: 0;margin-top: 8px;}
+.game_detail_tabs a:first-child::before{display: none;}
+.game_detail_text{color: #555555;font-size: 14px;line-height: 22px;padding: 0 10px;}
+.game_detail_text p{margin: 10px 0;text-indent: 24px;}
+.game_detail_text img{max-width: 100%;display: block;margin: 10px auto;}
+.game_detail_text .comment_title{margin: 15px 0 10px -10px;}
+.game_detail_img li:first-child + li{padding: 0 5px;}
+.game_detail_img li img{width: 100%;}
