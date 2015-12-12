@@ -39,18 +39,65 @@
         <h2 class="comment_title">评论</h2>
 
         <form action="#">
+            <!-- 未登录 -->
             <input class="comment_btn" type="button" value="发表评论">
             <div class="comment_not_login">
                 请先<a href="#">登录</a>，再评论
             </div><!-- /.comment_wrap -->
 
-            <!-- <input class="comment_btn" type="submit" value="发表评论">
-            <div class="comment_not_login">
-                请先<a href="#">登录</a>，再评论
-            </div> --><!-- /.comment_wrap -->
+            <!-- 已登录 -->
+            <a href="#" class="logout">[退出登录]</a>
+            <img class="logged_avatar" src="./img/avatar.jpg" alt="">
+            <span class="logged_username">朕</span>
+            <input class="comment_btn" type="submit" value="发表评论">
+            <div class="comment_not_login"><textarea name="" id="" placeholder="说说你的看法"></textarea></div><!-- /.comment_wrap -->
         </form>
 
+        <ul class="comments">
+            <li>
+                <img class="avatar" src="./img/avatar.jpg" alt="">
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣!</p>
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <img class="avatar" src="./img/avatar.jpg" alt="">
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣!</p>
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <img class="avatar" src="./img/avatar.jpg" alt="">
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣!</p>
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <img class="avatar" src="./img/avatar.jpg" alt="">
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣!</p>
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+        </ul><!-- /.comments -->
+
     </div><!-- /.comment -->
+
+    <div class="count_all">共10页</div><!-- /.count_all -->
+
+    <div class="pgn">
+        <a class="prev" href="#">上一页</a>
+        <strong>1</strong>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <span>...</span>
+        <a class="next" href="#">下一页</a>
+    </div><!-- /.pgn -->
 
     <footer>
         © 2015 军武次位面 京ICP备15033829号   版权所有

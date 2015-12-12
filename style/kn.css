@@ -8,5 +8,28 @@
 .comment{padding: 10px;}
 .comment_title{font-size: 18px;color: #000000;border-left: 5px solid #cf0f32;margin: 0 0 15px -10px;text-indent: 7px;}
 .comment_btn{width: 90px;float: right;line-height: 64px;background: #000;color: #fff;text-align: center;font-size: 18px;}
-.comment_not_login{height: 62px;margin-right: 90px;border: 1px solid #acacac;border-right: none;border-radius: 5px 0 0 5px;box-shadow: 0 0 2px #acacac inset;text-align: center;line-height: 62px;font-size: 16px;color: #9b9b9b;}
+.comment_not_login{height: 52px;display: block;margin-right: 90px;border: 1px solid #acacac;border-right: none;border-radius: 5px 0 0 5px;box-shadow: 0 0 2px #acacac inset;text-align: center;line-height: 52px;font-size: 16px;color: #9b9b9b;padding: 5px;}
+.comment_not_login textarea{border: none;width: 100%;padding: 0;height: 100%;resize: none;border-radius: 5px;}
 .comment_not_login a{color: #cf0f32;}
+.comments{}
+.logged_avatar{width: 30px;border-radius: 50%;float: left;}
+.logged_username{margin: 0 90px 5px 40px;line-height: 30px;display: block;color: #0e0e0e;font-size: 14px;}
+.logout{float: right;line-height: 30px;color: #999999;font-size: 14px;}
+.comments li{padding: 10px 0 10px 40px;border-bottom: 1px solid #e5e5e5;}
+.avatar{width: 30px;height: 30px;float: left;margin-left: -40px;display: block;border-radius: 50%;}
+.username{color: #888888;font-size: 14px;line-height: 26px;}
+.comment li p{color: #222222;font-size: 14px;line-height: 20px;}
+.like{float: right;line-height: 15px;background: url(../img/like.png) no-repeat 0 center;background-size: 15px auto;padding: 3px 0 0 20px;line-height: 20px;display: block;font-size: 12px;color: #999;}
+.comment_date{padding: 3px 0 0 0;color: #999;font-size: 12px;display: block;line-height: 20px;}
+.count_all{float: right;color: #02070a;font-size: 12px;line-height: 32px;margin-right: 10px;}
+.pgn{overflow: hidden;margin: 0 0 10px 10px;}
+.pgn > *{min-width: 30px;display: block;float: left;line-height: 30px;text-align: center;border: 1px solid #fff;}
+.pgn a{border-color: #dbdbdb;color: #02070a;}
+.pgn a + a{border-left: none;}
+.pgn a.prev,
+.pgn a.next{border-color: #fff;text-indent: -99999px;background: url(../img/nav_icon.png) no-repeat center center;background-size: 6px 10px;}
+.pgn a.prev{background-image: url(../img/nav_icon_left.png);}
+.pgn a.next{background-position: 5px center;}
+.pgn strong{border-color: #000;background: #000;color: #fff;}
+.pgn strong + a{border-left: none;}
+.pgn span{}
