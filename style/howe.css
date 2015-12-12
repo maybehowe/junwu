@@ -1,7 +1,4 @@
-.news_main{
-	padding: 0 8px;
-	background: #fff;
-}
+
 .main{position: relative;}
 .swipe {overflow: hidden;visibility: hidden;position: relative;margin-bottom: 18px;}
 .swipe-wrap {overflow: hidden;position: relative;}
@@ -66,10 +63,15 @@
 	line-height: 24px;
 	border-bottom: 1px #ececec solid;
 	padding:4px 0;
+	position: relative;
 }
 .hotnews_list .hotnews_item b{
-	font-size: 2rem;
+	font-size: 2.4rem;
 	color: #dbdbdb;
+	position: absolute;
+	display: block;
+	top: 4px;
+	left: 0;
 }
 .sns_list{
 
@@ -81,12 +83,104 @@
 	margin:0 auto;
 }
 .sns_list .sns_item #sns_wechat{
-	background: #62c950 url(../img/video_play_small.png) no-repeat;
+	background: #62c950 url(../img/sns_icon.png) no-repeat;
 	background-size: 55px 372px;
+	background-position: center -90px;
+}
+.sns_list .sns_item #sns_qq{
+	background: #129bdc url(../img/sns_icon.png) no-repeat;
+	background-size: 55px 372px;
+	background-position: center 15px;
+}
+.sns_list .sns_item #sns_weibo{
+	background: #ee4051 url(../img/sns_icon.png) no-repeat;
+	background-size: 55px 372px;
+	background-position: center -198px;
+}
+.sns_list .sns_item #sns_tieba{
+	background: #397ee5 url(../img/sns_icon.png) no-repeat;
+	background-size: 55px 372px;
+	background-position: center -308px;
 }
 
-
-
+.news_main{
+	padding: 0 8px;
+	background: #fff;
+}
+.news_item{
+	padding:10px 0;
+	border-bottom: 1px #ededed solid;
+	overflow: hidden;
+	zoom:1;
+}
+.news_item .news_img{
+	float: left;
+	border:2px #efefef solid;
+	width: 30%;
+	margin-right: 9px;
+}
+.news_info{
+	float: left;
+	width: 64%;
+}
+.news_info div{
+	width: 100%;
+}
+.news_info div.news_title{
+	font-size: 1.5rem;
+	line-height: 18px;
+}
+.news_info div.news_text{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #959595;
+	width: 86%;
+	line-height: 30px;
+	font-size: 1.2rem;
+}
+.news_info div.news_time{
+	text-align: right;
+	color: #959595;
+	font-size: 1.2rem;
+}
+.news_body{
+	padding:0 9px;
+}
+.news_body .news_main{
+	border-top: 1px #ececec solid;
+	padding-top: 10px;
+}
+.news_main .news_title{
+	font-size: 1.8rem;
+	line-height: 24px;
+	color: #222222;
+}
+.news_main .news_source_time{
+	position: relative;
+	color: #999999;
+	line-height: 20px;
+	height: 20px;
+}
+.news_main .news_source_time .news_source{
+	position: absolute;
+	left: 0;
+}
+.news_main .news_source_time .news_time{
+	position: absolute;
+	right: 0;
+}
+.news_text{
+	margin-top: 10px;
+	font-size: 1.4rem;
+	line-height: 22px;
+}
+.news_text p{
+	text-indent: 24px;
+}
+.news_text .news_img{
+	width: 100%;
+}
 
 
 
