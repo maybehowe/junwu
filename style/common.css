@@ -161,7 +161,13 @@ a {
   background-size: 6px 10px;
   color: #999;
 }
-<<<<<<< HEAD
+footer{
+  line-height: 30px;
+  text-align: center;
+  color: #888888;
+  font-size: 10px;
+  background: #000;
+}
 
 /* 视频列表.start */
 .videoList_main{}
@@ -219,12 +225,3 @@ a {
   margin: 6px 0;
 }
 /* 视频列表.end */
-=======
-footer{
-  line-height: 30px;
-  text-align: center;
-  color: #888888;
-  font-size: 10px;
-  background: #000;
-}
->>>>>>> 1b83172c5b223a1b5652f0e9642ceb1c88511e58
