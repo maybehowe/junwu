@@ -73,7 +73,6 @@ a:visited {
   color: #555555;
 }*/
 a {
-  display: block;
   text-decoration: none;
 }
 .clear {
