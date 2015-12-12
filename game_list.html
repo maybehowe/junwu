@@ -13,15 +13,27 @@
 </head>
 
 <body>
-	<header class="top_bar">
-		<div class="logo"></div>
-		<div class="menu_btn"></div>
-	</header><!-- top_bar -->
+    <header class="top_bar">
+        <div class="logo"></div>
+        <div class="menu_btn"></div>
+        <div class="nav_list_wrap">
+            <ul class="nav_list">
+                <li class="nav_item" id="home">首页</li>
+                <li class="nav_item" id="news">军事新闻</li>
+                <li class="nav_item" id="video">视频栏目</li>
+                <li class="nav_item" id="game">游戏推荐</li>
+                <li class="nav_item" id="contact">联系我们</li>
+            </ul>
+            <div class="nav_close"></div>
+        </div>
+    </header><!-- .top_bar -->
+
     <div class="nav_tree">
         <span class="nav_text nav_root">首页</span>
         <span class="nav_text nav_child">游戏推荐</span>
         <!-- <span class="nav_text nav_child">游戏</span> -->
     </div>
+
     <div class="game_list_main">
         <div class="game_list_item">
             <img class="game_list_img" src="./img/video_detail.jpg"/>
@@ -59,5 +71,11 @@
         </div>
     </div>
     
+    <footer>
+        © 2015 军武次位面 京ICP备15033829号   版权所有
+    </footer>
+    
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
