@@ -95,4 +95,65 @@
 }
 /* 视频list .end */
 
+/*游戏*/
+.game_list_item{
+	margin: 0 10px 10px 10px;
+}
+.game_list_item{
+	background: #000204;
+}
+.game_list_img{
+	width: 100%;
+}
+.game_list_title{
+	padding: 11px 15px;
+	font-size: 1.8rem;
+	color: #fff;
+}
+.game_list_tag{
+	padding: 0 15px;
+}
+.game_list_tag a{
+	padding: 3px 6px;
+	font-size:1.3rem;
+	color: #fff;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	margin: 3px;
+
+}
+.game_list_item_bo{
+	color: #fff;
+	height: 48px;
+	line-height: 48px;
+	font-size: 1.5rem;
+	padding-right: 10px;
+}
+.game_list_tag_price{
+	font-size: 3rem;
+	float: left!important;
+	color: #eb173e;
+	margin-left: 15px;
+}
+.game_list_item_bo span{
+	/*display: inline-block;*/
+	float: right;
+}
+.game_list_tag_zan{
+	padding-left: 25px;
+	background: url(../img/game_list_icon.png) no-repeat 6px 17px;
+	background-size: 20px 60px;
+}
+.game_list_tag_wx{
+	padding-left: 25px;
+	background: url(../img/game_list_icon.png) no-repeat 4px -28px;
+	background-size: 20px 60px;
+}
+
+
+
+
+
+
 
