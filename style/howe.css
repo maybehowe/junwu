@@ -34,6 +34,10 @@
 	background: url(../img/more_icon.png) no-repeat center right;
   	background-size: 7px 11px;
 }
+.main_wrap .wrap_title .more a{
+	color: #000;
+	text-decoration: none;
+}
 .wrap_body{
 	padding:11px 9px 16px 9px;
 }
