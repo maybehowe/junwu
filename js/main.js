@@ -18,8 +18,26 @@
 				}
 			});
 			var bullets = document.getElementById('position').getElementsByTagName('li');
+		},
+		showNavlist: function () {
+			$('.nav_list_wrap').animate({
+				'top': 0
+			},'fast')
+		},
+		hideNavlist: function () {
+			$('.nav_list_wrap').animate({
+				'top': '-600px'
+			},'fast')
 		}
 	};
 
-	junwu.swiptInit();
+	$('.menu_btn').on('click', function () {
+		junwu.showNavlist();
+	});
+
+	$('.nav_close').on('click', function () {
+		junwu.hideNavlist();
+	});
+
+	
 })();
