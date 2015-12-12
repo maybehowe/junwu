@@ -37,9 +37,20 @@
 .wrap_body{
 	padding:11px 9px;
 }
-.recomond_vedio{
+.recomond_video{
 	position: relative;
 }
-.recomond_vedio_img{
+.recomond_video_img{
 	width: 100%;
+}
+.video_play_btn{
+	width: 39px;
+	height: 39px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -20px;
+	margin-left: -20px;
+	background: url(../img/video_play_small.png) no-repeat center center;
+  	background-size: 39px 39px;
 }
