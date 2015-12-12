@@ -461,6 +461,10 @@ footer{
   overflow: hidden;
   zoom:1;
 }
+.news_item a{
+  display: block;
+  overflow: hidden;
+}
 .news_item .news_img{
   float: left;
   border:2px #efefef solid;
