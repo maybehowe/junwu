@@ -128,7 +128,7 @@ a {
 .top_bar{
   height: 50px;
   background: #000204;
-  padding:0 18px;
+  padding-left: 18px;
 }
 .top_bar .logo{
   float: left;
@@ -140,7 +140,7 @@ a {
 .top_bar .menu_btn{
   float: right;
   height: 50px;
-  width: 22px;
+  width: 60px;
   background: url(../img/menu_icon.png) no-repeat center center;
   background-size: 22px 16px;
 }
