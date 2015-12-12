@@ -1,5 +1,6 @@
+var junwu = window.junwu || {};
 (function () {
-	var junwu = {
+	junwu = {
 		swiptInit: function() {
 			var self = this;
 			window.mySwipe = Swipe(document.getElementById('slider'), {
