@@ -161,3 +161,70 @@ a {
   background-size: 6px 10px;
   color: #999;
 }
+<<<<<<< HEAD
+
+/* 视频列表.start */
+.videoList_main{}
+.videoList_main .videoList_main_item{
+  position: relative;
+  width: 50%;
+  float: left;
+  padding: 15px 0;
+}
+.videoList_main_image{
+  display: block;
+  margin: 0 auto;
+  width: 93%;
+  border-radius: 5px;
+}
+.videoList_main_img_box:after{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: '';
+  height: 39px;
+  width: 39px;
+  background: url(../img/video_play_small.png) no-repeat 0 0;
+  background-size: 39px 39px;
+  margin-left: -17px;
+  margin-top: -21px;
+}
+.videoList_main_img_box{
+  position: relative;
+}
+.videoList_main_img_box:before{
+  position: absolute;
+  left: 50%;
+  content: '';
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  width: 93%;
+  background: red;
+  margin-left: -47%;
+  border-radius: 5px;
+
+  background-color:#000609;
+  filter:alpha(opacity=20); 
+  -moz-opacity:0.2; 
+  opacity:0.2;
+
+
+}
+.videoList_main_txt{
+  color: #222;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  padding: 0 4%;
+  margin: 6px 0;
+}
+/* 视频列表.end */
+=======
+footer{
+  line-height: 30px;
+  text-align: center;
+  color: #888888;
+  font-size: 10px;
+  background: #000;
+}
+>>>>>>> 1b83172c5b223a1b5652f0e9642ceb1c88511e58
