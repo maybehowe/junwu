@@ -229,7 +229,7 @@ footer{
 }
 
 /* 视频列表.start */
-.videoList_main{}
+.videoList_main{overflow: hidden;}
 .videoList_main .videoList_main_item{
   position: relative;
   width: 50%;
@@ -266,7 +266,7 @@ footer{
   margin: 0 auto;
   width: 93%;
   background: red;
-  margin-left: -47%;
+  margin-left: -46.5%;
   border-radius: 5px;
 
   background-color:#000609;
@@ -375,6 +375,7 @@ footer{
 }
 .wrap_body{
   padding:11px 9px 16px 9px;
+  overflow: hidden;
 }
 .recomond_video{
   position: relative;
@@ -556,10 +557,13 @@ footer{
   padding: 10px 0;
 
 }
+.contact_tag_detail>a,
 .contact_tag_detail>div{
   padding-left: 43px;
   height: 29px;
   line-height: 29px;
+  color: #000;
+  display: block;
 }
 .contact_tag_mail{
   background: url('../img/contact_icon.png') no-repeat 20px -227px;
