@@ -3,7 +3,7 @@
 	background: #fff;
 }
 .main{position: relative;}
-.swipe {overflow: hidden;visibility: hidden;position: relative;}
+.swipe {overflow: hidden;visibility: hidden;position: relative;margin-bottom: 18px;}
 .swipe-wrap {overflow: hidden;position: relative;}
 .swipe-wrap > div {float:left;width:100%;position: relative;}
 .swipe-wrap .wrap{}
@@ -14,7 +14,7 @@
 .img_index #position li{display: inline-block;width: 6px;height: 6px;border-radius: 6px;background: #FFF;margin: 0 1px;cursor: pointer;}
 .img_index #position li.on{background: #cf0f32;}
 .main_wrap{
-	margin-top: 18px;
+	/*margin-top: 18px;*/
 }
 .main_wrap .wrap_title{
 	height: 20px;
@@ -24,6 +24,9 @@
 	border-left: 5px #cf0f32 solid;
 	padding-left: 9px;
 	position: relative;
+}
+.main_wrap .wrap_title .small_title{
+	font-size: 1.2rem;
 }
 .main_wrap .wrap_title .more{
 	position: absolute;
@@ -35,10 +38,11 @@
   	background-size: 7px 11px;
 }
 .wrap_body{
-	padding:11px 9px;
+	padding:11px 9px 16px 9px;
 }
 .recomond_video{
 	position: relative;
+	border-radius: 4px;
 }
 .recomond_video_img{
 	width: 100%;
@@ -54,3 +58,36 @@
 	background: url(../img/video_play_small.png) no-repeat center center;
   	background-size: 39px 39px;
 }
+.hotnews_list{
+	font-size: 1.6rem;
+	line-height: 18px;
+}
+.hotnews_list .hotnews_item{
+	line-height: 24px;
+	border-bottom: 1px #ececec solid;
+	padding:4px 0;
+}
+.hotnews_list .hotnews_item b{
+	font-size: 2rem;
+	color: #dbdbdb;
+}
+.sns_list{
+
+}
+.sns_list .sns_item .sns_icon{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin:0 auto;
+}
+.sns_list .sns_item #sns_wechat{
+	background: #62c950 url(../img/video_play_small.png) no-repeat;
+	background-size: 55px 372px;
+}
+
+
+
+
+
+
+
