@@ -1,0 +1,9 @@
+.contact_icon{
+	/*width: */
+	margin: 0 auto;
+	width: 185px;
+	height: 212px;
+	background: url('../img/contact_icon.png') no-repeat 0px 0px;
+	background-size: 200px 250px;
+
+}
