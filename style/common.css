@@ -594,9 +594,11 @@ footer{
   position: relative;
   text-align: center;
 }
+.videoList_top>div>a,
 .videoList_top>div>span{
   padding: 5px;
   border-radius: 5px;
+  color: #c0c0c0;
 }
 .videoList_top>div .active{
   background: #1a1a1a;
