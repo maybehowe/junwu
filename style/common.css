@@ -594,9 +594,11 @@ footer{
   position: relative;
   text-align: center;
 }
+.videoList_top>div>a,
 .videoList_top>div>span{
   padding: 5px;
   border-radius: 5px;
+  color: #c0c0c0;
 }
 .videoList_top>div .active{
   background: #1a1a1a;
@@ -623,6 +625,7 @@ footer{
 
 /*游戏*/
 .game_list_item{
+  display: block;
   margin: 0 10px 10px 10px;
 }
 .game_list_item{
@@ -639,7 +642,7 @@ footer{
 .game_list_tag{
   padding: 0 15px;
 }
-.game_list_tag a{
+.game_list_tag span{
   padding: 3px 6px;
   font-size:1.3rem;
   color: #fff;
