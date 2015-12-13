@@ -7,12 +7,22 @@ h1, h2, h3, h4, h5, p, em, img, ol, ul, li {
     vertical-align: baseline;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-html{font-size: 62.5%;}
+html{height: 100%;font-size: 62.5%;}
 body {
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
   font-family: Helvetica, 'STXihei', 'STHeiti Light', 'Microsoft yahei', sans-serif;
   line-height: 1;
   background-color: #fff;
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
   padding-top: 50px;
+  box-sizing: border-box;
 }
 
 
@@ -691,6 +701,7 @@ footer{
   background: url(../img/game_list_icon.png) no-repeat 4px -28px;
   background-size: 20px 60px;
 }
+
 
 
 
