@@ -17,6 +17,7 @@ body {
   background-color: #f5f5f5;
 }
 body.white_body{background-color: #fff;}
+body.black_body{background-color: #000;}
 
 .wrapper{
   min-height: 100%;
@@ -344,8 +345,17 @@ footer{
 .reply_box input[type="button"]{line-height: 26px;background: #cf0f32;color: #fff;padding: 0 20px;font-size: 14px;border-radius: 2px;margin: 5px 0;}
 .reply_box input[type="button"].reply_cancel{background: #bbbbbb;}
 .more_comments{display: block;text-align: right;background: url(../img/apply_arrow.png) no-repeat right center;background-size: 15px 15px;padding-right: 20px;line-height: 20px;margin: 10px 0 0;color: #000;font-size: 14px;}
+.comments_box{background: #f5f5f5;margin-left: 15px;padding: 2px 5px;font-size: 12px;}
+.comments_box p{margin: 3px 0;}
+.comments_box p:nth-child(2) ~ p{display: none;}
+.comments_box.show p:nth-child(2) ~ p{display: block;}
+.comments_box a.hide_comments,
+.comments_box.show a.show_comments{display: none;}
+.comments_box.show a.hide_comments{display: block;}
+.comments_box a{color: #cf0f32;}
+.comments_box > a{display: block;margin: 5px 0 3px;}
 .avatar{width: 30px;height: 30px;float: left;margin-left: -40px;display: block;border-radius: 50%;}
-.username{color: #888888;font-size: 14px;line-height: 26px;}
+.username{color: #888888;font-size: 15px;line-height: 26px;}
 .comment li p{color: #222222;font-size: 14px;line-height: 20px;}
 .like{float: right;line-height: 15px;background: url(../img/like.png) no-repeat 0 center;background-size: 15px auto;padding: 3px 0 0 20px;line-height: 20px;display: block;font-size: 12px;color: #999;}
 .comment_date{padding: 3px 0 0 0;color: #999;font-size: 12px;display: block;line-height: 20px;}
@@ -737,7 +747,8 @@ footer{
 @ navigation page
 ******************/
 .nav_box{
-  padding: 0 10px 10px;}
+  padding: 0 10px 4px;
+  background: #f5f5f5;}
   .nav_box h2{
     color: #000;
     font-size: 16px;
@@ -745,15 +756,21 @@ footer{
     line-height: 40px;
     text-indent: 16px;
     background: #ffcb2d;}
+  .nav_box span{
+    color: #999999;
+    display: inline-block;
+    margin: 15px 3px 3px;
+    font-size: 14px;}
   .nav_box a{
     color: #666666;
     font-size: 14px;
     line-height: 25px;
     padding: 0 10px;
-    margin: 3px;
+    margin: 6px 3px;
     border-radius: 3px;
     display: inline-block;
     background: #ececec;}
+    .nav_box a.current,
     .nav_box a:focus{
       color: #fff;
       background: #000204;}
@@ -874,7 +891,7 @@ nav{
     .recommend li:last-child{margin-bottom: 0;}
     .recommend_corner{
       width: 46px;
-      height: 26px;
+      height: 17px;
       padding-top: 9px;
       position: absolute;
       top: 0;
@@ -952,12 +969,246 @@ nav{
           color: #5b656f;
           background-position: -78px center;}
 
+/******************
+@ search page
+******************/
+.more{
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #c0c0c0;
+  font-size: 14px;
+  margin: 6px 10px 0;
+  background: #232323;
+  display: block;
+  border-radius: 3px;}
+  .more::after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 3px;
+    display: inline-block;
+    background: url(../img/arrow_double.png) no-repeat center center;
+    background-size: 12px 12px;}
+.search{
+  height: 42px;
+  line-height: 42px;
+  color: #000204;
+  padding: 0 20px;
+  font-size: 14px;
+  background: #fff;}
+  a.search_type_a{
+    float: right;
+    color: #000204;
+    display: block;
+    padding-right: 15px;
+    position: relative;}
+    a.search_type_a::after{
+      content: '';
+      width: 0;
+      height: 0;
+      top: 50%;
+      right: 0;
+      margin: -2px 0 0 0;
+      position: absolute;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #cf0f32 transparent transparent transparent;}
+      a.search_type_a:focus::after{
+        margin-top: -8px;
+        border-color: transparent transparent #cf0f32 transparent;}
+  .search_type{
+    padding: 0 20px;
+    margin: 0 -20px;
+    background: #fff;
+    z-index: 3;
+    display: none;
+    position: relative;}
+    a.search_type_a:focus ~ .search_type{display: block;}
+    .search_type a{
+      display: block;
+      color: #000204;
+      border-top: 1px solid #f4f4f4;}
+      .search_type a.current{
+        color: #cf0f32;
+        background: url(../img/checkmark_red.png) no-repeat right center;
+        background-size: 14px 10px;}
 
+/******************
+@ video page
+******************/
+.video_wrap{
+  margin: 10px;
+  color: #a0a0a0;}
+  .video_wrap > *{
+    max-width: 100%;
+    display: block;}
+  .video_wrap h1{
+    font-size: 16px;
+    margin: 10px 0 5px;}
+.share_layer{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  position: fixed;
+  display: none;
+  background: url(../img/swipe_bg.png) repeat 0 0, url(../img/swipe_bg.png) repeat 0 0;}
+  .share_wechat{
+    width: 165px;
+    height: 121px;
+    right: 0;
+    display: none;
+    position: absolute;
+    margin: 10px 15px 0 0;}
+  .share_ios{
+    width: 214px;
+    height: 94px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -118px;
+    position: absolute;}
 
-
-
-
-
+/******************
+@ new game detail page
+******************/
+h1.detail_h1{
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background: #232323;
+  font-weight: normal;}
+  .detail_h1 span{
+    color: #505050;
+    font-size: 12px;
+    float: right;}
+.game_detail_banner{
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;}
+.grey_box{
+  background: #232323;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;}
+  .grey_box::after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;}
+  .grey_box .recommend_corner{
+    position: static;
+    margin: -6px 0 0 -13px;}
+  .grey_box p{
+    margin: 5px 0;
+    line-height: 18px;}
+    p.top_p{
+      margin-top: -16px;
+      text-indent: 40px;}
+  .like_tags{
+    color: #515151;
+    padding: 5px 0 0;
+    text-align: right;}
+    .like_tags a{
+      line-height: 23px;
+      display: inline-block;
+      color: #515151;
+      margin: 0 3px;}
+    .like_tags a.like{
+      float: left;
+      margin: 0;
+      background: url(../img/like_red.png) no-repeat 0 center;
+      background-size: 15px 15px;}
+  .info_list{margin-right: 84px;}
+    .info_list li{
+      padding: 5px 0 5px 8px;
+      margin: 3px 0 3px 22px;
+      background: #2e2e2e;}
+      .info_list li::before{
+        content: '';
+        width: 14px;
+        height: 22px;
+        display: block;
+        float: left;
+        margin: -3px 0 0 -30px;
+        background: url(../img/plus_substrac.png) no-repeat 0 4px;
+        background-size: 14px 34px;}
+        .info_list li.subtract::before{background-position: 0 -22px;}
+      .grey_box .recommend_icons{
+        width: 100%;
+        background: #232323;}
+        .grey_box .recommend_icons a{margin: 0 0 0 2px;}
+    .grey_box .video_wrap{margin: 10px 0;}
+    .share_btn{
+      line-height: 35px;
+      background: #cf0f32;
+      color: #fff;
+      font-size: 18px;
+      display: block;
+      border-radius: 17px;
+      text-align: center;
+      box-shadow: 0 3px 0 #730015;}
+      .share_btn::before{
+        content: '';
+        width: 18px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 6px;
+        background: url(../img/share.png) no-repeat center center;
+        background-size: 18px 16px;}
+    .grey_box h3{
+      color: #ffffff;
+      font-size: 15px;
+      margin: 20px 0 10px;
+      padding-left: 10px;
+      border-left: 4px solid #cf0f32;}
+    .game_info_tb{
+      width: 49%;
+      float: left;
+      color: #515151;
+      font-size: 10px;}
+      .game_info_tb th{
+        text-align: left;
+        color: #fff;
+        font-size: 12px;}
+      .game_info_tb td{
+        padding: 5px 0;
+        vertical-align: top;}
+        .game_info_tb td:first-child{white-space: nowrap;}
+        .game_info_tb.left_tb td:last-child{padding-right: 10px;}
+      .game_info_tb + .game_info_tb th:first-child,
+      .game_info_tb + .game_info_tb td:first-child{
+        padding-left: 10px;
+        border-left: 1px solid #2c2c2c;}
+.download{
+  text-align: center;}
+  .download a{
+    line-height: 33px;
+    text-align: center;
+    padding: 0 6px 0 29px;
+    margin: 2%;
+    color: #232323;
+    font-size: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #ffcb2d url(../img/download_icons.png) no-repeat 7px center;
+    background-size: 257px 18px;
+    box-shadow: 0 3px 0 #b28706;}
+    .download a.download_ios{background-position: -114px center;}
+    .download a.download_android{background-position: -233px center;}
+  .black_comment{}
+    .black_comment .comment_not_login{border-color: #3e3e3e;box-shadow: none;background: #4f4f4f;}
+      .black_comment .comment_not_login a{color: #ffcb2d;}
+      .black_comment .comment_not_login textarea{background-color: #4f4f4f;color: #a3a1a1;}
+      .black_comment li p{color: #888;}
+      .black_comment .reply_a{color: #ffcb2d;}
+      .black_comment .reply_box input[type="button"]{background: #ffcb2d;color: #000;}
+      .black_comment .reply_box input[type="button"].reply_cancel{background: #bbbbbb;}
+      .black_comment .comments_box{background: #272727;}
+      .black_comment .comments_box a{color: #ffcb2d;}
+      .black_comment .more_comments{color: #999999;background-image: url(../img/apply_arrow_yellow.png);}
 
 
 

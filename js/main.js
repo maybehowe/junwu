@@ -22,7 +22,7 @@ var junwu = window.junwu || {};
 					oText.html(oWrap.eq(pos).data('text'))
 				}
 			});
-			var bullets = document.getElementById('position').getElementsByTagName('li');
+			var bullets = document.getElementById('position') ? document.getElementById('position').getElementsByTagName('li') : null;
 		},
 		showNavlist: function () {
 			$('.nav_list_wrap').animate({
@@ -52,4 +52,27 @@ var junwu = window.junwu || {};
 		var oThis = $(this)
 		oThis.parent().removeClass('show')
 	});
+
+	$('#share_layer').click(function(event) {
+		var oThis = $(this)
+		oThis.hide()
+	});
+
+	$('.comments_box > a').click(function(event) {
+		var oThis = $(this),
+			oParent = oThis.parent()
+
+		if(oThis.hasClass('show_comments')){
+			oParent.addClass('show')
+		}else{
+			oParent.removeClass('show')
+		}
+	});
 })();
+
+function share_layer(type){
+	var oLayer = $('#share_layer')
+	oLayer.find('img').hide()
+	oLayer.find('img.share_'+type).show()
+	oLayer.show()
+}
