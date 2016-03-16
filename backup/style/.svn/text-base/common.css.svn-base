@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   font-family: Helvetica, 'STXihei', 'STHeiti Light', 'Microsoft yahei', sans-serif;
   line-height: 1;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 
 .wrapper{
@@ -29,7 +29,7 @@ body {
 input {
   margin: 0;
   padding: 0;
-  /*-webkit-appearance: none;*/
+  -webkit-appearance: none;
   border-style: none;
 }
 
@@ -146,26 +146,19 @@ a {
   width: 100%;
 }
 .top_bar .logo{
-  width: 97px;
+  float: left;
+  margin-left: 18px;
+  width: 67px;
   height: 50px;
-  margin: 0 auto;
   background: url(../img/logo.png) no-repeat center center;
-  background-size: 97px 33px;
+  background-size: 67px 50px;
 }
 .top_bar .menu_btn{
-  float: left;
+  float: right;
   height: 50px;
   width: 60px;
   background: url(../img/menu_icon.png) no-repeat center center;
   background-size: 22px 16px;
-}
-.top_bar .search_a{
-  float: right;
-  height: 50px;
-  width: 60px;
-  text-indent: -99999px;
-  background: url(../img/menu_search.png) no-repeat center center;
-  background-size: 22px 21px;
 }
 .nav_list_wrap{
   position: absolute;
@@ -315,7 +308,7 @@ footer{
 .subtitle{font-size: 12px;color: #a0a0a0;display: block;}
 .comment{padding: 10px;}
 .comment_title{font-size: 18px;color: #000000;border-left: 5px solid #cf0f32;margin: 0 0 15px -10px;text-indent: 7px;}
-.comment_btn{width: 90px;float: right;line-height: 64px;background: #000;color: #fff;text-align: center;font-size: 18px;}
+.comment_btn{width: 90px;float: right;line-height: 64px;background: #000;color: #fff;text-align: center;font-size: 18px;border-radius: 0;}
 .comment_not_login{height: 52px;display: block;margin-right: 90px;border: 1px solid #acacac;border-right: none;border-radius: 5px 0 0 5px;box-shadow: 0 0 2px #acacac inset;text-align: center;line-height: 52px;font-size: 16px;color: #9b9b9b;padding: 5px;}
 .comment_not_login textarea{border: none;width: 100%;padding: 0;height: 100%;resize: none;border-radius: 5px;}
 .comment_not_login a{color: #cf0f32;}
@@ -709,125 +702,81 @@ footer{
   background-size: 20px 60px;
 }
 
-/******************
-@ navigation page
-******************/
-.nav_box{
-  padding: 0 10px 10px;}
-  .nav_box h2{
-    color: #000;
-    font-size: 16px;
-    margin: 0 -10px 8px;
-    line-height: 40px;
-    text-indent: 16px;
-    background: #ffcb2d;}
-  .nav_box a{
-    color: #666666;
-    font-size: 14px;
-    line-height: 25px;
-    padding: 0 10px;
-    margin: 3px;
-    border-radius: 3px;
-    display: inline-block;
-    background: #ececec;}
-    .nav_box a:focus{
-      color: #fff;
-      background: #000204;}
-
-
-/******************
-@ login page
-******************/
-.login_wrap{
-  background: #f5f5f5;
-  padding: 0 9px 20px;}
-  .login_wrap h1{
-    font-size: 19px;
-    text-align: center;
-    line-height: 72px;}
-  .login_wrap input[type="text"],
-  .login_wrap input[type="password"]{
-    width: 100%;
-    line-height: 40px;
-    border: 1px solid #d7d7d7;
-    border-radius: 3px;
-    margin: 0 0 8px;
-    text-indent: 10px;
-    font-size: 16px;}
-  .btn_red{
-    width: 100%;
-    font-size: 16px;
-    border-radius: 3px;
-    line-height: 40px;
-    background: #d22727;
-    color: #fff;
-    text-align: center;
-    margin: 20px 0 13px;}
-  .login_wrap a{
-    color: #297dcc;
-    font-size: 16px;}
-    .login_wrap a.right_a{float: right;}
-  .sns_wrap{text-align: center;}
-    .sns_wrap h1{
-      height: 35px;
-      color: #333333;
-      font-size: 16px;
-      text-align: center;
-      border-bottom: 1px solid #d7d7d7;}
-      .sns_wrap h1 span{
-        padding: 0 20px;
-        background: #f5f5f5;}
-    .sns_wrap a{
-      width: 80px;
-      height: 80px;
-      margin: 30px 3%;
-      display: inline-block;
-      text-indent: -99999px;
-      background: url(../img/sns_icons.png) no-repeat 0 center;
-      background-size: 340px 79px;}
-      .sns_wrap a.sns_qq{background-position: center center;}
-      .sns_wrap a.sns_weibo{background-position: right center;}
-      .login_wrap input[type="text"].code{
-        width: 60%;
-        float: left;
-        display: block;
-        border-right: none;
-        border-radius: 3px 0 0 3px;}
-      .code_img{
-        height: 40px;
-        margin-left: 60%;
-        padding-right: 32px;
-        text-align: center;
-        background: #fff url(../img/reload.png) no-repeat right center;
-        background-size: 32px 19px;
-        border: 1px solid #d9d9d9;
-        border-radius: 0 3px 3px 0;}
-        .code_img img{
-          width: 72px;}
-  .login_qq h1{text-align: left;}
-  .login_qq h2{
-    line-height: 20px;
-    color: #888888;
-    font-size: 14px;
-    margin: -10px 0 15px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.layer{
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  position: fixed;
+  background: url(../img/black_bg.png) repeat 0 0;
+}
+.layer_close{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 15px;
+  display: block;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin: -12px -12px 0 0;
+}
+.layer_box{
+  width: 76%;
+  height: 50%;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50% 0 0 -38%;
+}
+.layer_box img{
+  max-width: 100%;
+  display: block;
+}
+.layer_qq{
+  height: 100%;
+  font-size: 14px;
+  border-radius: 4px;
+  line-height: 20px;
+  display: table;
+}
+.layer_qq.hidden{
+  display: none;
+}
+.layer_qq_core{
+  display: table-cell;
+  vertical-align: middle;
+}
+.layer_qq_core p{
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+.layer_qq_core span{
+  display: block;
+}
+.layer_weibo{
+  height: 100%;
+  display: table;
+}
+.layer_weibo.hidden{
+  display: none;
+}
+.layer_weibo_core{
+  display: table-cell;
+  vertical-align: middle;
+}
+.weibo_btns{
+  padding: 10px;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+}
 
 
 

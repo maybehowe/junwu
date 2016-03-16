@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns:wb="http://open.weibo.com/wb">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
@@ -11,10 +11,50 @@
 </head>
 
 <body>
+<div id="layer" class="layer hidden">
+	<div class="layer_box">
+
+		<div id="layer_weixin" class="hidden">
+			<a href="javascript:void(0);" class="layer_close">X</a>
+			<img src="./img/weixin.jpg" alt="">
+		</div><!-- /#layer_weixin.hidden -->
+
+		<div id="layer_qq" class="layer_qq hidden">
+			<div class="layer_qq_core">
+				<a href="javascript:void(0);" class="layer_close">X</a>
+				<p>
+					<span>【262】航空研究&nbsp;399851020</span>
+					<span>【262】海军研究&nbsp;399827397</span>
+					<span>【262】坦克研究 144010727</span>
+					<span>【262】枪械研究 417342553</span>
+					<span>【262】历史研究 148014356</span>
+					<span>【262】3D建模 149368755</span>
+					<span>【262字幕组】376686280</span>
+					<span>【262】战争游戏俱乐部 72717042</span>
+					<span>【舰娘巨法好！】62859881</span>             
+					<span>【262】视频制作预备班 458897775</span>   
+					<span>【262】Wehrmacht俱乐部&nbsp;230175371</span>                  
+					<span>【262水友俱乐部】&nbsp;YY频道 93001673</span>
+				</p>
+			</div><!-- /.layer_qq_core -->
+		</div><!-- /#qq.hidden -->
+
+		<div id="layer_weibo" class="layer_weibo hidden">
+			<div class="layer_weibo_core">
+				<div class="weibo_btns">
+					<a href="javascript:void(0);" class="layer_close">X</a>
+
+	                <p><wb:follow-button uid="5602219608" type="red_3" width="100%" height="24"><iframe src="http://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=3&amp;uid=5602219608&amp;width=100%&amp;height=24&amp;language=zh_cn" width="100%" height="24" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:follow-button></p>
+	                <p><wb:follow-button uid="1961397247" type="red_3" width="100%" height="24"><iframe src="http://widget.weibo.com/relationship/followbutton.php?btn=red&amp;style=3&amp;uid=1961397247&amp;width=100%&amp;height=24&amp;language=zh_cn" width="100%" height="24" frameborder="0" scrolling="no" marginheight="0"></iframe></wb:follow-button></p>
+				</div><!-- /.weibo_btns -->
+            </div>
+		</div><!-- /#layer_weibo -->
+	</div><!-- /.layer_box -->
+</div><!-- /.layer -->
+
 <div class="wrapper">
 	<header class="top_bar">
-		<a class="search_a" href="#">搜索</a>
-		
+		<div class="logo"></div>
 		<div class="menu_btn"></div>
 		<div class="nav_list_wrap">
 			<ul class="nav_list">
@@ -26,8 +66,6 @@
 			</ul>
 			<div class="nav_close"></div>
 		</div>
-
-		<div class="logo"></div>
 	</header><!-- .top_bar -->
 
 	<div class="nav_tree">
@@ -108,22 +146,22 @@
 		<div class="wrap_body">
 			<ul class="sns_list display-flexbox">
 				<li class="sns_item flexbox-children">
-					<a href="####">
+					<a href="javascript:layer.show(0)">
 						<div class="sns_icon" id="sns_wechat"></div>
 					</a>
 				</li>
 				<li class="sns_item flexbox-children">
-					<a href="####">
+					<a href="javascript:layer.show(1)">
 						<div class="sns_icon" id="sns_qq"></div>
 					</a>
 				</li>
 				<li class="sns_item flexbox-children">
-					<a href="####">
+					<a href="javascript:layer.show(2)">
 						<div class="sns_icon" id="sns_weibo"></div>
 					</a>
 				</li>
 				<li class="sns_item flexbox-children">
-					<a href="####">
+					<a href="http://tieba.baidu.com/f?kw=%E5%86%9B%E6%AD%A6%E6%AC%A1%E4%BD%8D%E9%9D%A2&ie=utf-8" target="_blank">
 						<div class="sns_icon" id="sns_tieba"></div>
 					</a>
 				</li>
