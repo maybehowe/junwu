@@ -16,6 +16,7 @@ body {
   line-height: 1;
   background-color: #f5f5f5;
 }
+body.white_body{background-color: #fff;}
 
 .wrapper{
   min-height: 100%;
@@ -324,6 +325,25 @@ footer{
 .logged_username{margin: 0 90px 5px 40px;line-height: 30px;display: block;color: #0e0e0e;font-size: 14px;}
 .logout{float: right;line-height: 30px;color: #999999;font-size: 14px;}
 .comments li{padding: 10px 0 10px 40px;border-bottom: 1px solid #e5e5e5;}
+.no_avatar .comments li{padding-left: 0;}
+.reply_a{color: #cf0f32;}
+.reply_box{padding-top: 8px;text-align: right;position: relative;display: none;}
+.reply_box.show{display: block;}
+.reply_box::before{
+  content: '';
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  margin: -4px 0 0 20px;
+  position: absolute;
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent #ededed transparent;}
+.reply_box textarea{width: 100%;height: 60px;background: #ededed;border: none;padding: 5px;box-sizing: border-box;resize: none;border-radius: 2px;}
+.reply_box input[type="button"]{line-height: 26px;background: #cf0f32;color: #fff;padding: 0 20px;font-size: 14px;border-radius: 2px;margin: 5px 0;}
+.reply_box input[type="button"].reply_cancel{background: #bbbbbb;}
+.more_comments{display: block;text-align: right;background: url(../img/apply_arrow.png) no-repeat right center;background-size: 15px 15px;padding-right: 20px;line-height: 20px;margin: 10px 0 0;color: #000;font-size: 14px;}
 .avatar{width: 30px;height: 30px;float: left;margin-left: -40px;display: block;border-radius: 50%;}
 .username{color: #888888;font-size: 14px;line-height: 26px;}
 .comment li p{color: #222222;font-size: 14px;line-height: 20px;}
@@ -361,11 +381,15 @@ footer{
 .swipe-wrap > div {float:left;width:100%;position: relative;}
 .swipe-wrap .wrap{}
 .swipe_img{position: relative;}
+.swipe_img.recommend_swipe{margin-bottom: 0;}
 .swipe_imgs{display: block; width: 100%;height: 100%;}
 .img_index{width: 100%;position: absolute;bottom: 5px;text-align: center;}
 .img_index #position{width: 100%;}
 .img_index #position li{display: inline-block;width: 6px;height: 6px;border-radius: 6px;background: #FFF;margin: 0 1px;cursor: pointer;}
-.img_index #position li.on{background: #cf0f32;}
+.img_index #position li.on{background: #cf0f32;box-shadow: 0 0 3px #fff, 0 0 3px #fff;}
+.recommend_swipe .img_index #position{width: auto;float: right;margin: 8px 10px 0 0;}
+.recommend_swipe .img_index{background: url(../img/swipe_bg.png) repeat 0 0;margin: 0 0 -5px;}
+.recommend_swipe .img_index > span{float: left;line-height: 30px;display: inline-block;color: #fff;padding-left: 20px;}
 .main_wrap{
   /*margin-top: 18px;*/
 }
@@ -810,6 +834,123 @@ footer{
     color: #888888;
     font-size: 14px;
     margin: -10px 0 15px;}
+
+nav{
+  overflow: hidden;
+  padding: 10px 0;
+  background: #333333;}
+  nav a{
+    width: 20%;
+    line-height: 22px;
+    display: block;
+    float: left;
+    margin-left: -2px;
+    color: #c0c0c0;
+    font-size: 14px;
+    text-align: center;
+    border-left: 1px solid #404040;
+    border-right: 1px solid #282828;}
+    nav a.current{
+      color: #ffcb2d;
+      font-size: 16px;}
+
+/******************
+@ game recommend page
+******************/
+.recommend{
+  background: #000;
+  padding: 10px 10px 1px;}
+  .recommend li{
+    padding: 10px 10px 0;
+    margin-bottom: 10px;
+    background: #232323;
+    position: relative;}
+    .recommend li::after{
+      content: '';
+      width: 100%;
+      height: 0;
+      display: block;
+      clear: both;}
+    .recommend li:last-child{margin-bottom: 0;}
+    .recommend_corner{
+      width: 46px;
+      height: 26px;
+      padding-top: 9px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      z-index: 2;
+      text-indent: 8px;
+      margin: 5px 0 0 -3px;
+      background: url(../img/recommend_corner.png) no-repeat 0 0;
+      background-size: 46px 26px;}
+    .score_box{
+      width: 70px;
+      float: right;
+      font-size: 12px;
+      color: #fff;
+      padding-top: 5px;
+      text-align: center;
+      background: #00ac01;}
+      .score_box.news{background: #ff051a;}
+      .score_box.yellow{background: #ff990b;}
+      .score_box.red{background: #9b0e07;}
+      .score_box strong{
+        line-height: 40px;
+        font-size: 40px;}
+      .score_box.news strong{font-size: 20px;}
+      .score_box span{
+        line-height: 22px;
+        display: block;
+        font-size: 14px;
+        color: #000;
+        margin-top: 5px;
+        background: #fff;}
+    .img_wrap{
+      height: 73px;
+      display: block;
+      overflow: hidden;
+      margin-right: 84px;
+      position: relative;}
+      .img_wrap .date{
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        color: #fff;
+        padding: 3px;
+        font-size: 10px;
+        background: url(../img/swipe_bg.png) repeat 0 0, url(../img/swipe_bg.png) repeat 0 0;}
+      .img_wrap img{
+        /*max-width: 100%;*/
+        height: 100%;
+        display: block;}
+    .recommend_text{
+      line-height: 30px;
+      float: left;
+      color: #fff;}
+    .recommend_icons{
+      float: right;
+      line-height: 30px;}
+      .recommend_icons a{
+        width: 15px;
+        height: 30px;
+        display: block;
+        float: left;
+        margin: 0 0 0 6px;
+        text-indent: -99999px;
+        background: url(../img/recommend_icons.png) no-repeat 0 center;
+        background-size: 92px 15px;}
+        .recommend_icons a.recommend_xbox{background-position: 1px center;}
+        .recommend_icons a.recommend_windows{background-position: -19px center;}
+        .recommend_icons a.recommend_ios{background-position: -38px center;}
+        .recommend_icons a.recommend_android{background-position: -57px center;}
+        .recommend_icons a.recommend_like{
+          width: auto;
+          padding-left: 20px;
+          text-indent: 0;
+          color: #5b656f;
+          background-position: -78px center;}
 
 
 

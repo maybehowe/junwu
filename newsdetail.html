@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style/common.css" media="all">
 </head>
 
-<body>
+<body class="white_body">
 <div class="wrapper">
 	<header class="top_bar">
 		<a class="search_a" href="#">搜索</a>
@@ -33,7 +33,7 @@
 	<nav>
 		<a href="#">首页</a>
 		<a href="#">游戏</a>
-		<a href="#">新闻</a>
+		<a class="current" href="#">新闻</a>
 		<a href="#">热门标签</a>
 		<a href="#">导航</a>
 	</nav>
@@ -58,7 +58,80 @@
     			<p>“这次融资，对方主要是看好我们的团队”，谈起融资，曾航对团队成员的表现很是赞赏：“‘军武’之前从选题、找资料、剪辑、3D建模、配音和推广。</p>
 			</div>
 		</div>
-	</div>
+	</div><!-- /.news_body -->
+
+    <div class="comment no_avatar">
+        <h2 class="comment_title">评论</h2>
+
+        <form action="#">
+            <!-- 未登录 -->
+            <input class="comment_btn" type="button" value="发表评论">
+            <div class="comment_not_login">
+                请先<a href="#">登录</a>，再评论
+            </div><!-- /.comment_wrap -->
+
+            <!-- 已登录 -->
+            <a href="#" class="logout">[退出登录]</a>
+            <div class="clear"></div>
+            <input class="comment_btn" type="submit" value="发表评论">
+            <div class="comment_not_login"><textarea name="" id="" placeholder="说说你的看法"></textarea></div><!-- /.comment_wrap -->
+        </form>
+
+        <ul class="comments">
+            <li>
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+
+				<div class="reply_box">
+					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
+					<input type="button" value="取消" class="reply_cancel">
+					<input type="button" value="提交">
+				</div><!-- /.reply_box -->
+
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+
+				<div class="reply_box">
+					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
+					<input type="button" value="取消" class="reply_cancel">
+					<input type="button" value="提交">
+				</div><!-- /.reply_box -->
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+
+				<div class="reply_box">
+					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
+					<input type="button" value="取消" class="reply_cancel">
+					<input type="button" value="提交">
+				</div><!-- /.reply_box -->
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+            <li>
+                <span class="username">谁啊你是</span>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+
+				<div class="reply_box">
+					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
+					<input type="button" value="取消" class="reply_cancel">
+					<input type="button" value="提交">
+				</div><!-- /.reply_box -->
+                <a href="javascript:void(0);" class="like">88</a>
+                <span class="comment_date">1天前</span>
+            </li>
+        </ul><!-- /.comments -->
+
+	    <a href="javascript:void(0)" class="more_comments">展开更多评论</a>
+    </div><!-- /.comment -->
+
 </div><!-- /.wrapper -->
     
 <footer>
