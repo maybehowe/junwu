@@ -77,15 +77,15 @@
             <div class="comment_not_login"><textarea name="" id="" placeholder="说说你的看法"></textarea></div><!-- /.comment_wrap -->
         </form>
 
-        <ul class="comments">
+        <ul id="comments" class="comments">
             <li>
                 <span class="username">谁啊你是</span>
-                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" data-id="1" href="javascript:void(0);">回复</a>]</p>
 
 				<div class="reply_box">
 					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
 					<input type="button" value="取消" class="reply_cancel">
-					<input type="button" value="提交">
+					<input type="button" value="提交" class="reply_submit">
 				</div><!-- /.reply_box -->
 
 				<div class="comments_box">
@@ -130,43 +130,52 @@
             </li>
             <li>
                 <span class="username">谁啊你是</span>
-                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" data-id="2" href="javascript:void(0);">回复</a>]</p>
 
 				<div class="reply_box">
 					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
 					<input type="button" value="取消" class="reply_cancel">
-					<input type="button" value="提交">
+					<input type="button" value="提交" class="reply_submit">
 				</div><!-- /.reply_box -->
+
+				<div class="comments_box"></div><!-- /.comments_box -->
                 <a href="javascript:void(0);" class="like">88</a>
                 <span class="comment_date">1天前</span>
             </li>
             <li>
                 <span class="username">谁啊你是</span>
-                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" data-id="3" href="javascript:void(0);">回复</a>]</p>
 
 				<div class="reply_box">
 					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
 					<input type="button" value="取消" class="reply_cancel">
-					<input type="button" value="提交">
+					<input type="button" value="提交" class="reply_submit">
 				</div><!-- /.reply_box -->
+
+				<div class="comments_box"></div><!-- /.comments_box -->
                 <a href="javascript:void(0);" class="like">88</a>
                 <span class="comment_date">1天前</span>
             </li>
             <li>
                 <span class="username">谁啊你是</span>
-                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" href="javascript:void(0);">回复</a>]</p>
+                <p>价格不错也蛮适合的,画面超赞,运行流畅,动作带感,音效很棒,玩法有趣! [<a class="reply_a" data-id="4" href="javascript:void(0);">回复</a>]</p>
 
 				<div class="reply_box">
 					<textarea name="reply" id="reply" placeholder="请输入回复内容"></textarea>
 					<input type="button" value="取消" class="reply_cancel">
-					<input type="button" value="提交">
+					<input type="button" value="提交" class="reply_submit">
 				</div><!-- /.reply_box -->
+
+				<div class="comments_box"></div><!-- /.comments_box -->
                 <a href="javascript:void(0);" class="like">88</a>
                 <span class="comment_date">1天前</span>
             </li>
         </ul><!-- /.comments -->
 
-	    <a href="javascript:void(0)" class="more_comments">展开更多评论</a>
+	    <a id="more_items" href="javascript:void(0)" data-url="/comment/get_more" data-target="#comments" class="more_comments">
+			<span class="more_normal">展开更多评论</span>
+			<span class="more_loading">加载中...</span>
+	    </a>
     </div><!-- /.comment -->
 
 </div><!-- /.wrapper -->

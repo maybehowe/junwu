@@ -38,6 +38,11 @@
 		<a href="#">导航</a>
 	</nav>
 
+	<form action="/" class="search_box">
+		<input type="text" name="search" id="search" placeholder="请输入搜索关键词">
+		<input type="submit" value="搜索">
+	</form><!-- /.search_box -->
+
 	<div class="search">
 		<a class="search_type_a" href="javascript:void(0);">星级排序</a>
 		搜索“全球行动” 的结果如下：
@@ -49,7 +54,7 @@
 		</div><!-- /.search_type -->
 	</div><!-- /.search -->
 
-	<ul class="recommend">
+	<ul id="recommend" class="recommend">
 		<li>
 			<div class="recommend_corner">推荐</div>
 
@@ -134,7 +139,10 @@
 		</li>
 	</ul><!-- /.recommend -->
 
-	<a href="#" class="more">加载更多</a>
+	<a id="more_items" href="javascript:void(0)" data-url="/search/get_more" data-target="#recommend" class="more_items">
+		<span class="more_normal">加载更多</span>
+		<span class="more_loading">加载中...</span>
+	</a><!-- /.more_items -->
 	
 </div><!-- /.wrapper -->
 

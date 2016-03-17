@@ -68,6 +68,106 @@ var junwu = window.junwu || {};
 			oParent.removeClass('show')
 		}
 	});
+
+	//显示搜索框
+	$('.search_a').click(function(event) {
+		$('.search_box').toggleClass('show');
+	});
+
+	//加载更多方法
+	var oMore = $('#more_items')
+	if(oMore.length > 0){
+		var sUrl = oMore.data('url'),
+			oTarget = $(oMore.data('target'))
+		$(window).scroll(function(){
+			var scrollTop = $(this).scrollTop();
+			var scrollHeight = $(document).height();
+			var windowHeight = $(this).height();
+			//已滚动到底部
+			if(scrollTop + windowHeight == scrollHeight){
+				if(oMore.hasClass('loading')){
+					return
+				}
+				oMore.addClass('loading')
+
+				$.ajax({
+					url: sUrl,
+					type: 'post',
+					data: {},
+					success: function(data){
+						// console.log(data)
+
+						/*
+						if(data){
+							oTarget.append(data);
+						}else{
+							oMore.remove()							
+						}
+						oMore.removeClass('loading')
+						*/
+
+						//测试代码，删掉就好。把上边注释掉的代码段打开使用
+						setTimeout(function(){
+							oTarget.append(sTest);
+							oMore.removeClass('loading')
+						}, 1500)
+					},
+					error: function(data){
+						// console.log('error: ', data)
+						oMore.removeClass('loading')
+					}
+				})
+			}
+		});
+	}
+
+	//回复ajax方法
+	var oReply = $('.reply_submit')
+	oReply.click(function(){
+		var oThis = $(this),
+			oReplyText = oThis.parent().find('textarea'),
+			oCommentsBox = oThis.parent().next('.comments_box')
+		if(oReplyText.val() == ''){
+			alert('请输入回复内容')
+			return
+		}
+
+		if(oThis.hasClass('loading')){
+			return
+		}
+		oThis.addClass('loading')
+
+		$.ajax({
+			url: sUrl,
+			type: 'post',
+			data: {
+				id: oThis.data('id'),
+				reply: oReplyText.val()
+			},
+			success: function(data){
+				// console.log(data)
+
+				/*
+				if(data){
+					oCommentsBox.prepend(data);
+				}else{
+					oThis.remove()							
+				}
+				oThis.removeClass('loading')
+				*/
+
+				//测试代码，删掉就好。把上边注释掉的代码段打开使用
+				setTimeout(function(){
+					oCommentsBox.prepend(sTest);
+					oThis.removeClass('loading')
+				}, 1500)
+			},
+			error: function(data){
+				// console.log('error: ', data)
+				oThis.removeClass('loading')
+			}
+		})
+	})
 })();
 
 function share_layer(type){
@@ -76,3 +176,5 @@ function share_layer(type){
 	oLayer.find('img.share_'+type).show()
 	oLayer.show()
 }
+
+var sTest = '<div class="test">aaaaa<br />aaaaa<br />aaaaa<br />aaaaa<br /></div>'
