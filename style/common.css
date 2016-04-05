@@ -1143,6 +1143,9 @@ h1.detail_h1{
   .grey_box .recommend_corner{
     position: static;
     margin: -6px 0 0 -13px;}
+  .grey_box img,
+  .grey_box iframe{
+    max-width: 100%;}
   .grey_box p{
     margin: 5px 0;
     line-height: 18px;}
@@ -1238,6 +1241,12 @@ h1.detail_h1{
     background: #ffcb2d url(../img/download_icons.png) no-repeat 7px center;
     background-size: 257px 18px;
     box-shadow: 0 3px 0 #b28706;}
+    @media screen and (max-width: 374px) {
+      .download a{
+        font-size: 14px;
+        margin: 2% 0;
+      }
+    }
     .download a.download_ios{background-position: -114px center;}
     .download a.download_android{background-position: -233px center;}
   .black_comment{}
