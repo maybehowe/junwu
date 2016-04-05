@@ -44,6 +44,12 @@ input[type="text"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+input[type="button"] {
+  -webkit-appearance: none;
+}
+input[type="submit"] {
+  -webkit-appearance: none;
+}
 ol,
 ul,
 li {
