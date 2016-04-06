@@ -168,6 +168,19 @@ var junwu = window.junwu || {};
 			}
 		})
 	})
+
+	$('.search_type_a')
+		.click(function(event) {
+			var oThis = $(this)
+			oThis.toggleClass('show');
+		})
+	.next('.search_type').find('a')
+		.click(function(event) {
+			var oThis = $(this)
+			oThis
+				.addClass('current')
+				.siblings().removeClass('current')
+		});
 })();
 
 function share_layer(type){

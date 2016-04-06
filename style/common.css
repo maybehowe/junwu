@@ -1025,7 +1025,7 @@ nav{
       border-width: 5px;
       border-style: solid;
       border-color: #cf0f32 transparent transparent transparent;}
-      a.search_type_a:focus::after{
+      a.search_type_a.show::after{
         margin-top: -8px;
         border-color: transparent transparent #cf0f32 transparent;}
   .search_type{
@@ -1035,7 +1035,7 @@ nav{
     z-index: 3;
     display: none;
     position: relative;}
-    a.search_type_a:focus ~ .search_type{display: block;}
+    a.search_type_a.show ~ .search_type{display: block;}
     .search_type a{
       display: block;
       color: #000204;
