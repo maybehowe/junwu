@@ -1288,6 +1288,36 @@ h1.detail_h1{
           color: #666666;
           line-height: 16px;}
 
+.home_title{
+  line-height: 20px;
+  color: #ffcb2d;
+  padding: 0 0 0 10px;
+  margin: 10px;
+  font-size: 14px;
+  border-left: 4px solid #ffcb2d;}
+  .home_title a{
+    color: #ffcb2d;
+    float: right;}
+.home_list{}
+  .home_list a{
+    line-height: 16px;
+    color: #fff;
+    display: block;
+    padding: 5px 16px;
+    margin: 0 8px;
+    text-indent: -6px;
+    position: relative;
+    border-bottom: 1px solid #151515;}
+    .home_list a::before{
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin: 4px 0 0 -8px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;}
+.home_title + .recommend{padding-top: 0;}
+
 
 
 
