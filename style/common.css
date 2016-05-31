@@ -1274,6 +1274,7 @@ h1.detail_h1{
     /*display: inline-block;*/}
     .waterfalls img{
       width: 100%;
+      display: block;
       border-radius: 3px 3px 0 0;}
       .waterfalls a span{
         display: block;
